@@ -41,6 +41,7 @@
 
 .headline {
     background: #1C1A19;
+    padding: 2rem;
     height: 80vh;
     display: flex;
     flex-direction: column;
@@ -48,16 +49,18 @@
     float: left;
     flex-wrap: wrap;
 
-    
+
 }
 
 .headline h1 {
     font-family: 'Crete Round', 'cursive';
     font-style: normal;
-    font-weight: 500;
-    font-size: 36px;
-    line-height: 34px;
+    font-weight: 400;
+    font-size: 46px;
     color: #FF6B00;
+    line-height: 55px;
+    letter-spacing: 0.3rem;
+    margin-bottom: 0.5rem;
 }
 
 .headline h2 {
@@ -67,19 +70,21 @@
     font-size: 20px;
     line-height: 34px;
     color: #FFF5E1;
+    margin-bottom: 0.5rem;
 }
 
-.headline p
-{
+.headline p {
     font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 26px;
-color: #ffffff;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
 }
 
-.icons i
-{
+.icons i {
     color: #ffffff;
+    margin-top: 1.2rem;
+    margin-right: 0.8rem;
+    font-size: 20px;
 }
