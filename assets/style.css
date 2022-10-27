@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+}
+
+.top_header {
+    background: #3C3A39;
+    padding: 1.4rem;
+}
+
+.top_header li {
+    list-style: none;
+}
+
+.top_header a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.top_header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
