@@ -11,6 +11,10 @@
     flex-direction: column;
 }
 
+.app>* {
+    flex: 1 1 auto;
+}
+
 .top_header {
     background: #3C3A39;
     padding: 1.4rem;
@@ -33,4 +37,25 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.headline {
+    background: #1C1A19;
+    height: 100vh;
+}
+
+.headline h1 {
+    font-family: 'Crete Round', 'cursive';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    color: #FF6B00;
+}
+
+.headline h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color: #FFF5E1;
 }
