@@ -20,11 +20,7 @@
   padding: 1.4rem;
 }
 
-.top_header li {
-  list-style: none;
-}
-
-.top_header a {
+.top_header nav a {
   text-decoration: none;
   color: #fff;
   font-family: 'Roboto', 'Times New Roman', Times, serif;
@@ -33,7 +29,7 @@
   font-size: 18px;
 }
 
-.top_header ul {
+.top_header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -80,9 +76,13 @@
   color: #fff;
 }
 
-.icons i {
-  color: #fff;
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.icons li {
   margin-top: 1.2rem;
   margin-right: 0.8rem;
-  font-size: 20px;
+  list-style: none;
 }

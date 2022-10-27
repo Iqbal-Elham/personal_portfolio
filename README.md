@@ -43,7 +43,7 @@ Test for Linters For tracking linter errors locally you need to follow these ste
 1. For tracking linter errors in HTML files run:
 ```bash npx hint . ``` 
 2. For tracking linter errors in CSS or SASS files run:
-```bash npx stylelint "\*_/_.{css,scss}" ``` 
+```bash npx stylelint "**/*.{css,scss}" ``` 
 
 
 ## Authors
