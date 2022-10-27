@@ -2,7 +2,7 @@
 
 # Personal_portfolio
 
-This is my personal portfolio mobile version
+> This is my personal portfolio mobile version
 
 
 ## Built With
