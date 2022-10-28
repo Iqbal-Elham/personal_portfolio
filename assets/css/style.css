@@ -11,7 +11,7 @@
   flex-direction: column;
 }
 
-.header_app>* {
+.header_app > * {
   flex: 1 1 auto;
 }
 
@@ -87,7 +87,6 @@
   list-style: none;
 }
 
-
 .project_cards {
   display: grid;
   gap: 2rem;
@@ -103,18 +102,18 @@
   padding: 1.8rem;
 }
 
-.works>h1 {
+.works > h1 {
   font-family: 'Crete Round';
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
   line-height: 52px;
   text-align: center;
-  color: #1C1A19;
+  color: #1c1a19;
   margin: 5rem 0 1rem 0;
 }
 
-.works>hr {
+.works > hr {
   width: 100%;
   margin: 3rem auto;
 }
@@ -128,15 +127,14 @@
 .project1 li {
   list-style: none;
   margin: 0.5rem 0.9rem 0.5rem 0;
-  border: 1px solid #8993A4;
+  border: 1px solid #8993a4;
   padding: 0.5rem;
   text-align: center;
   font-family: 'Inter', 'cursive';
   font-style: normal;
   font-weight: 900;
   font-size: 15px;
-  color: #091E42;
-
+  color: #091e42;
 }
 
 .project1 h2 {
@@ -145,7 +143,7 @@
   font-weight: 400;
   font-size: 32px;
   line-height: 70px;
-  color: #091E42;
+  color: #091e42;
 }
 
 .project1 p {
@@ -154,15 +152,15 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #091E42;
+  color: #091e42;
 }
 
 .project1 button {
   color: white;
-  background: #FF6B00;
+  background: #ff6b00;
   width: 30%;
   padding: 0.4rem;
-  border: #FF6B00;
+  border: #ff6b00;
   font-family: 'Inter';
   font-size: 16px;
   line-height: 24px;
@@ -176,7 +174,6 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-
 }
 
 .head_card {
@@ -188,8 +185,9 @@
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
+
   /* line-height: 44px; */
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .project p {
@@ -198,9 +196,8 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #FFFFFF;
+  color: #fff;
 }
-
 
 .project li {
   list-style: none;
@@ -211,32 +208,31 @@
   font-weight: 900;
   font-size: 15px;
   line-height: 20px;
-  color: #FFFFFF;
+  color: #fff;
   background: rgba(255, 255, 255, 0.24);
 }
 
 .project button {
   color: white;
-  background: #FF6B00;
+  background: #ff6b00;
   padding: 0.4rem;
-  border: #FF6B00;
+  border: #ff6b00;
   font-family: 'Inter';
   font-size: 16px;
   text-align: center;
   font-weight: bold;
   cursor: pointer;
-
 }
 
 .about_me {
-  background: #1C1A19;
-  color: #FFFFFF;
+  background: #1c1a19;
+  color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.about_me hr
-{
+
+.about_me hr {
   width: 90%;
   margin: 1rem auto;
 }
@@ -251,9 +247,8 @@
   font-weight: 400;
   font-size: 60px;
   line-height: 70px;
-  color: #FF6B00;
-  margin: 1rem 0rem;
-
+  color: #ff6b00;
+  margin: 1rem 0;
 }
 
 .about p {
@@ -262,15 +257,14 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-
 }
 
 .about button {
   color: white;
-  background: #FF6B00;
+  background: #ff6b00;
   margin-top: 2rem;
   padding: 0.4rem;
-  border: #FF6B00;
+  border: #ff6b00;
   font-family: 'Inter';
   font-size: 16px;
   line-height: 24px;
@@ -282,7 +276,6 @@
 .frame {
   display: flex;
   justify-content: flex-end;
-
 }
 
 .all_skills {
@@ -290,8 +283,6 @@
   justify-content: center;
   align-items: center;
   margin: 4rem 0;
-
-
 }
 
 .all_skills ul {
@@ -301,5 +292,4 @@
   align-items: center;
   line-height: 3rem;
   font-family: 'inter';
-
 }
