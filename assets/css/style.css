@@ -11,7 +11,7 @@
   flex-direction: column;
 }
 
-.header_app > * {
+.header_app>* {
   flex: 1 1 auto;
 }
 
@@ -102,7 +102,7 @@
   padding: 1.8rem;
 }
 
-.works > h1 {
+.works>h1 {
   font-family: 'Crete Round', 'cursive', Times, serif;
   font-style: normal;
   font-weight: 400;
@@ -113,7 +113,7 @@
   margin: 5rem 0 1rem 0;
 }
 
-.works > hr {
+.works>hr {
   width: 100%;
   margin: 3rem auto;
 }
@@ -312,4 +312,66 @@ button:hover {
 button:active {
   background: #e05304;
   color: white;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  margin-top: 5rem;
+}
+
+.contact h1 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #172B4D;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+
+.input-field {
+  padding: 0.7rem 0.5rem;
+  border: 0;
+  border-bottom: 1px solid #DBD8D7;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.textarea-field {
+  border: none;
+  background: #FBF8F7;
+  padding: 00.7rem 0.5rem;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.contact-button {
+  border: none;
+  color: #fff;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 17px;
+  line-height: 24px;
+  padding: 0.7rem 1rem;
+  margin: auto;
+  background-color: #f55800;
 }
