@@ -341,7 +341,7 @@ button:active {
   margin-bottom: 5rem;
 }
 
-.input-field {
+.inputField {
   padding: 0.7rem 0.5rem;
   border: 0;
   border-bottom: 1px solid #dbd8d7;
@@ -352,7 +352,7 @@ button:active {
   line-height: 24px;
 }
 
-.textarea-field {
+.textareaField {
   border: none;
   background: #fbf8f7;
   padding: 00.7rem 0.5rem;
