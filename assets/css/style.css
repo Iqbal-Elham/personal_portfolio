@@ -5,7 +5,7 @@
   margin: 0;
   padding: 0;
 }
-
+/* --------------------- header section ----------------- */
 .header_app {
   display: flex;
   flex-direction: column;
@@ -137,6 +137,8 @@
     align-items: center;
   }
 }
+
+/* ----------------- projects ---------------------------------- */
 
 .project_cards {
   display: grid;
@@ -480,6 +482,8 @@ button:active {
   background: #e05304;
   color: white;
 }
+
+/* ---------------------- Contact Section -------------------------- */
 
 .contact {
   display: flex;
