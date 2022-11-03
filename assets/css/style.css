@@ -11,7 +11,6 @@
   flex-direction: column;
 }
 
-
 .top_header {
   background: #3c3a39;
   padding: 1.4rem;
@@ -113,7 +112,6 @@
 }
 
 @media screen and (min-width: 768px) {
-
   .headline {
     background-image: url("../images/desktop_ver/Group.png");
     background-repeat: no-repeat;
@@ -124,7 +122,6 @@
     justify-content: center;
     align-items: center;
     gap: 4rem;
-
   }
 
   .headline p {
@@ -138,10 +135,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
   }
-
-
 }
 
 .project_cards {
@@ -159,7 +153,7 @@
   padding: 1.8rem;
 }
 
-.works>h1 {
+.works > h1 {
   font-family: 'Crete Round', 'cursive', Times, serif;
   font-style: normal;
   font-weight: 400;
@@ -170,7 +164,7 @@
   margin: 5rem 0 1rem 0;
 }
 
-.works>hr {
+.works > hr {
   width: 100%;
   margin: 3rem auto;
 }
@@ -289,7 +283,6 @@ line {
 }
 
 @media screen and (min-width: 768px) {
-
   .works {
     padding: 4rem 8rem;
   }
@@ -316,24 +309,22 @@ line {
     padding: 1rem;
     font-size: 20px;
   }
-
 }
+
 @media screen and (min-width: 992px) {
-  
-  
   .heading {
     margin-top: 1.4rem;
+
     /* text-align: unset; */
     margin-bottom: 3rem;
     position: relative;
     display: flex;
-    
   }
-  .hr-line
-  {
+
+  .hr-line {
     display: none;
   }
-  
+
   .heading::before {
     content: "";
     position: absolute;
@@ -345,25 +336,24 @@ line {
     background: #212121;
     z-index: -1;
   }
-  
+
   .heading span {
-    font-family: 'Crete Round';
+    font-family: 'Crete Round', 'cursive', Times, serif;
     background-color: white;
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
     line-height: 52px;
-    color: #091E42;
+    color: #091e42;
   }
-
 }
 
-
-@media screen and (max-width : 992px) {
+@media screen and (max-width: 992px) {
   .works {
     padding: 2rem;
   }
 }
+
 /* ---------------- about me section ---------------------- */
 
 .about_me {
@@ -387,7 +377,7 @@ line {
   background-position: bottom right;
 }
 
-.about>h1 {
+.about > h1 {
   font-family: 'Crete Round', 'cursive', Times, serif;
   font-style: normal;
   font-weight: 400;
@@ -419,10 +409,7 @@ line {
   cursor: pointer;
 }
 
-
-
 .skills {
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -439,7 +426,7 @@ line {
   line-height: 3.5rem;
 }
 
-@media screen and (min-width : 768px) {
+@media screen and (min-width: 768px) {
   .about {
     background-image: url(../images/desktop_ver/illustration-about\ me.svg);
     background-repeat: no-repeat;
@@ -466,18 +453,14 @@ line {
     justify-content: space-between;
     align-items: center;
     padding: 8rem 10rem;
-    
-
   }
 
   .skills li {
-
     list-style: none;
     justify-content: center;
     line-height: 3rem;
     font-size: 20px;
   }
-
 }
 
 button:disabled {
@@ -564,27 +547,25 @@ button:active {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #1C1A19;
+  background: #1c1a19;
   padding: 1.5rem;
   list-style: none;
   gap: 0.8rem;
 }
 
 @media screen and (min-width: 768px) {
-  .contact
-  {
+  .contact {
     display: grid;
     grid-template-columns: 0.7fr 1fr;
     padding: 2rem 5rem;
     gap: 2rem;
-    
   }
+
   .contact form {
-    
     margin-top: 0;
   }
-  .contact p 
-  {
+
+  .contact p {
     font-size: 32px;
     text-align: unset;
   }
