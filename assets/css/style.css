@@ -36,7 +36,6 @@
   display: none;
 }
 
-
 .headline {
   background: #1c1a19;
   padding: 2rem;
@@ -48,7 +47,6 @@
   background-repeat: no-repeat;
   background-position: bottom right;
 }
-
 
 .headline h1 {
   font-family: 'Crete Round', 'cursive', 'Times New Roman', Times, serif;
@@ -97,11 +95,10 @@
     gap: 1rem;
     align-items: center;
     list-style: none;
-
   }
 
   .top_header nav ul a {
-    font-family: 'Inter';
+    font-family: 'Inter', 'cursive', Times, serif;
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
@@ -129,7 +126,6 @@
   }
 
   .headline h1 {
-
     font-style: normal;
     font-weight: 400;
     font-size: 56px;
@@ -158,14 +154,13 @@
     align-items: center;
   }
 }
+
 @media screen and (min-width: 992px) {
-  .headline
-  {
+  .headline {
     gap: 5.2rem;
   }
 
   .headline h1 {
-
     font-style: normal;
     font-weight: 400;
     font-size: 72px;
@@ -212,7 +207,7 @@
   padding: 1.8rem;
 }
 
-.works>h1 {
+.works > h1 {
   font-family: 'Crete Round', 'cursive', Times, serif;
   font-style: normal;
   font-weight: 400;
@@ -223,7 +218,7 @@
   margin: 5rem 0 1rem 0;
 }
 
-.works>hr {
+.works > hr {
   width: 100%;
   margin: 3rem auto;
 }
@@ -361,6 +356,8 @@ line {
   }
 
   .project button {
+    padding: 1rem;
+    font-size: 20px;
     z-index: -1;
   }
 
@@ -371,18 +368,11 @@ line {
   .project1 ul {
     margin: 1rem 0;
   }
-
-  .project button {
-    padding: 1rem;
-    font-size: 20px;
-  }
 }
 
 @media screen and (min-width: 992px) {
   .heading {
     margin-top: 1.4rem;
-
-    /* text-align: unset; */
     margin-bottom: 3rem;
     position: relative;
     display: flex;
@@ -444,7 +434,7 @@ line {
   background-position: bottom right;
 }
 
-.about>h1 {
+.about > h1 {
   font-family: 'Crete Round', 'cursive', Times, serif;
   font-style: normal;
   font-weight: 400;
@@ -628,19 +618,20 @@ button:active {
     padding: 2rem 4rem;
     gap: 2rem;
   }
+
   .contact form {
     margin-top: 0;
     justify-content: flex-start;
   }
-  .contact-button
-  {
+
+  .contact-button {
     padding: 0.6rem 0.5rem;
     margin: 0;
     width: 30%;
   }
- 
+
   .contact p {
-    font-family: 'Inter';
+    font-family: 'Inter', 'cursive', Times, serif;
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -649,6 +640,7 @@ button:active {
     text-align: unset;
   }
 }
+
 @media screen and (min-width: 992px) {
   .contact {
     display: grid;
@@ -656,19 +648,20 @@ button:active {
     padding: 2rem 8rem;
     gap: 4rem;
   }
+
   .contact form {
     margin-top: 0;
     justify-content: flex-start;
   }
-  .contact-button
-  {
+
+  .contact-button {
     padding: 1rem;
     margin: 0;
     width: 40%;
   }
- 
+
   .contact p {
-    font-family: 'Inter';
+    font-family: 'Inter', 'cursive', Times, serif;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
