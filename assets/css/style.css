@@ -670,3 +670,16 @@ button:active {
     text-align: unset;
   }
 }
+
+
+.animated
+{
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+  /* animation-name: changeColor; */
+  /* animation-duration: 5s; */
+  /* animation-iteration-count: infinite; */
+  position: relative;
+
+}
