@@ -105,6 +105,10 @@
     line-height: 20px;
   }
 
+  .menu a:hover {
+    color: #ff6b00;
+  }
+
   .top_header {
     padding: 1.4rem 10rem;
   }
