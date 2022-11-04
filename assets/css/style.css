@@ -105,6 +105,10 @@
     line-height: 20px;
   }
 
+  .menu a:hover {
+    color: #ff6b00;
+  }
+
   .top_header {
     padding: 1.4rem 10rem;
   }
@@ -361,8 +365,16 @@ line {
     z-index: -1;
   }
 
-  .project:hover {
+  .project:hover button {
+    animation: buttonHover 0.7s;
     z-index: 0;
+
+    /* animation-play-state: paused; */
+  }
+
+  @keyframes buttonHover {
+    from { transform: translateY(50%); }
+    to { transform: translateY(-30%); }
   }
 
   .project1 ul {
@@ -669,4 +681,13 @@ button:active {
     color: #262626;
     text-align: unset;
   }
+}
+
+.logo {
+  animation: logoRotate 3s alternate 2s 5;
+}
+
+@keyframes logoRotate {
+  from { transform: rotate(0deg) scale(1); }
+  to { transform: rotate(360deg) scale(0.8); }
 }
