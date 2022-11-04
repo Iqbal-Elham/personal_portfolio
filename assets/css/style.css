@@ -361,8 +361,14 @@ line {
     z-index: -1;
   }
 
-  .project:hover {
+  .project:hover button{
+    animation: buttonHover 0.7s;
     z-index: 0;
+    /* animation-play-state: paused; */
+  }
+  @keyframes buttonHover {
+    from{transform: translateY(50%);}
+    to{transform: translateY(-30%);}
   }
 
   .project1 ul {
@@ -672,14 +678,14 @@ button:active {
 }
 
 
-.animated
+.logo
 {
-  width: 100px;
-  height: 100px;
-  background-color: aqua;
-  /* animation-name: changeColor; */
-  /* animation-duration: 5s; */
-  /* animation-iteration-count: infinite; */
-  position: relative;
-
+  animation: logoRotate 3s alternate 2s 5;
 }
+
+@keyframes logoRotate 
+{
+  from{transform: rotate(0deg) scale(1);}
+  to{transform: rotate(360deg) scale(0.8);}
+}
+
