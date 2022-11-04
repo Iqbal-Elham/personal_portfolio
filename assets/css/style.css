@@ -365,14 +365,16 @@ line {
     z-index: -1;
   }
 
-  .project:hover button{
+  .project:hover button {
     animation: buttonHover 0.7s;
     z-index: 0;
+
     /* animation-play-state: paused; */
   }
+
   @keyframes buttonHover {
-    from{transform: translateY(50%);}
-    to{transform: translateY(-30%);}
+    from { transform: translateY(50%); }
+    to { transform: translateY(-30%); }
   }
 
   .project1 ul {
@@ -681,15 +683,11 @@ button:active {
   }
 }
 
-
-.logo
-{
+.logo {
   animation: logoRotate 3s alternate 2s 5;
 }
 
-@keyframes logoRotate 
-{
-  from{transform: rotate(0deg) scale(1);}
-  to{transform: rotate(360deg) scale(0.8);}
+@keyframes logoRotate {
+  from { transform: rotate(0deg) scale(1); }
+  to { transform: rotate(360deg) scale(0.8); }
 }
-
