@@ -211,7 +211,7 @@
   padding: 1.8rem;
 }
 
-.works > h1 {
+.works > h3 {
   font-family: 'Crete Round', 'cursive', Times, serif;
   font-style: normal;
   font-weight: 400;
@@ -251,7 +251,7 @@
   color: #091e42;
 }
 
-.project1 h2 {
+.project1 h3 {
   font-family: 'Crete Round', 'cursive', Times, serif;
   font-style: normal;
   font-weight: 400;
@@ -294,7 +294,7 @@
   margin: 1rem;
 }
 
-.project h2 {
+.project h3 {
   font-family: 'Crete Round', 'cursive', Times, serif;
   font-style: normal;
   font-weight: 400;
@@ -446,7 +446,7 @@ line {
   background-position: bottom right;
 }
 
-.about > h1 {
+.about > h2 {
   font-family: 'Crete Round', 'cursive', Times, serif;
   font-style: normal;
   font-weight: 400;
