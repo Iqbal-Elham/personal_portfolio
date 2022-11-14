@@ -15,6 +15,16 @@
 .top_header {
   background: #3c3a39;
   padding: 1.4rem;
+  position: fixed;
+  width: 100%;
+}
+
+.menu_item a {
+  font-size: 34px !important;
+  font-family: 'Inter', 'cursive', 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: 700;
+  color: #fff5e1 !important;
 }
 
 .top_header nav a {
@@ -33,7 +43,35 @@
 }
 
 .menu {
-  display: none;
+  display: flex;
+  position: fixed;
+  left: -100%;
+  background: #3c3a39;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  transition: 0.4s;
+  color: white;
+  top: 0;
+  padding: 3rem 1.5rem;
+  gap: 2rem;
+}
+
+.menu_item {
+  border-bottom: 2px solid #6f6c6b;
+  padding: 0.4rem 0.7rem;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu img {
+  float: right;
+}
+
+.menu.active {
+  left: 0;
 }
 
 .headline {
@@ -91,18 +129,38 @@
 
 @media screen and (min-width: 768px) {
   .menu {
-    display: inherit;
+    left: 0;
+    display: flex;
     gap: 1rem;
     align-items: center;
     list-style: none;
+    flex-direction: row;
+    position: relative;
+    background: #3c3a39;
+    height: 10%;
+    color: white;
+    padding: 0;
+  }
+
+  .menu_item {
+    border-bottom: 2px solid #6f6c6b;
+    padding: 0;
+  }
+
+  .menu li {
+    border: 0;
+  }
+
+  .menu img {
+    display: none;
   }
 
   .top_header nav ul a {
     font-family: 'Inter', 'cursive', Times, serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 15px;
     line-height: 20px;
+    font-size: 18px !important;
   }
 
   .menu a:hover {
@@ -110,7 +168,7 @@
   }
 
   .top_header {
-    padding: 1.4rem 10rem;
+    padding: 1rem 10rem;
   }
 
   .toggle {
@@ -373,8 +431,13 @@ line {
   }
 
   @keyframes buttonHover {
-    from { transform: translateY(50%); }
-    to { transform: translateY(-30%); }
+    from {
+      transform: translateY(50%);
+    }
+
+    to {
+      transform: translateY(-30%);
+    }
   }
 
   .project1 ul {
@@ -688,6 +751,11 @@ button:active {
 }
 
 @keyframes logoRotate {
-  from { transform: rotate(0deg) scale(1); }
-  to { transform: rotate(360deg) scale(0.8); }
+  from {
+    transform: rotate(0deg) scale(1);
+  }
+
+  to {
+    transform: rotate(360deg) scale(0.8);
+  }
 }

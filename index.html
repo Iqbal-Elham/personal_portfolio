@@ -19,16 +19,22 @@
       <header class="top_header">
         <nav>
           <div class="logo"><a href="#">Iqbal Elham</a></div>
-          <ul class="menu">
-            <li><a href="">Portfolio</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href=""><img src="./assets/images/desktop_ver/Disabled.png" alt="Message icon" /></a></li>
-          </ul>
+          <div class="hum_menu">
           <a class="toggle"><img src="./assets/images/Union.png" alt="Humburger icon" /></a>
+          <ul class="menu">
+            <li><a href=""><img src="./assets/images/desktop_ver/Icon.png" alt="close icon" /></a></li>
+            <li class="menu_item"><a href="#portfolio">Portfolio</a></li>
+            <li class="menu_item"><a href="#works">Works</a></li>
+            
+            <li class="menu_item"><a href="#about">About</a></li>
+            
+            <li class="menu_item"><a href="#contact">Contact</a></li>
+            
+          </ul>
+        </div>
         </nav>
       </header>
-      <section class="headline">
+      <section id="portfolio" class="headline">
         <div class="info">
           <h1>Hey There.<br />I'm Iqbal</h1>
           <h2>I'm a Software Developer</h2>
@@ -59,7 +65,7 @@
         </div>
       </section>
     </div>
-    <section class="works">
+    <section id="works" class="works">
       <h2 class="heading"><span>My Recent Works</span></h2>
       <hr class="hr-line"/>
 
@@ -176,7 +182,7 @@
         </div>
       </div>
     </section>
-    <section class="about_me">
+    <section id="about" class="about_me">
       <div class="about">
         <h2>About me</h2>
         <p>
@@ -258,7 +264,7 @@
         </ul>
     </section>
 
-    <footer class="contact">
+    <footer id="contact" class="contact">
       <p>
         I'm always interested in hearing about new projects, so if you'd like to
         chat please get in touch.
@@ -291,6 +297,7 @@
         </li>
       </ul>
     </div>
+    <script src="./assets/js/script.js"></script>
   </body>
 
 </html>
