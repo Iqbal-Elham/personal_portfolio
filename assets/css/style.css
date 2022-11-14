@@ -15,6 +15,15 @@
 .top_header {
   background: #3c3a39;
   padding: 1.4rem;
+  position: fixed;
+  width: 100%;
+}
+
+.menu_item a {
+  font-size: 28px;
+  font-family: 'Inter', 'cursive', 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: 700;
 }
 
 .top_header nav a {
@@ -40,7 +49,7 @@
   display: flex;
   position: fixed;
   left: -100%;
-  background: #3C3A39;
+  background: #3c3a39;
   flex-direction: column;
   width: 100%;
   height: 100%;
@@ -49,24 +58,15 @@
   top: 0;
   padding: 3rem 2rem;
   gap: 2rem;
-
 }
 
 .menu_item {
-  border-bottom: 2px solid #6F6C6B;
+  border-bottom: 2px solid #6f6c6b;
   padding: 1rem 0.7rem;
-}
-
-.menu_item a {
-  font-size: 28px !important;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
 }
 
 .menu li {
   list-style: none;
-
 }
 
 .menu img {
@@ -130,7 +130,6 @@
   list-style: none;
 }
 
-
 @media screen and (min-width: 768px) {
   .menu {
     left: 0;
@@ -140,14 +139,14 @@
     list-style: none;
     flex-direction: row;
     position: relative;
-    background: #3C3A39;
+    background: #3c3a39;
     height: 10%;
     color: white;
-    padding: 0rem;
+    padding: 0;
   }
 
   .menu_item {
-    border-bottom: 2px solid #6F6C6B;
+    border-bottom: 2px solid #6f6c6b;
     padding: 0;
   }
 
@@ -172,7 +171,7 @@
   }
 
   .top_header {
-    padding: 1.4rem 10rem;
+    padding: 1rem 10rem;
   }
 
   .toggle {
@@ -273,7 +272,7 @@
   padding: 1.8rem;
 }
 
-.works>h3 {
+.works > h3 {
   font-family: 'Crete Round', 'cursive', Times, serif;
   font-style: normal;
   font-weight: 400;
@@ -284,7 +283,7 @@
   margin: 5rem 0 1rem 0;
 }
 
-.works>hr {
+.works > hr {
   width: 100%;
   margin: 3rem auto;
 }
@@ -513,7 +512,7 @@ line {
   background-position: bottom right;
 }
 
-.about>h2 {
+.about > h2 {
   font-family: 'Crete Round', 'cursive', Times, serif;
   font-style: normal;
   font-weight: 400;
