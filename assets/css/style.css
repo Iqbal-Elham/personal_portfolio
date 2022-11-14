@@ -31,10 +31,11 @@
   justify-content: space-between;
   align-items: center;
 }
-.toggle
-{
+
+.toggle {
   display: block;
 }
+
 .menu {
   display: flex;
   position: fixed;
@@ -50,30 +51,32 @@
   gap: 2rem;
 
 }
-.menu_item 
-{
- border-bottom: 2px solid #6F6C6B;
- padding: 1rem 0.7rem;
+
+.menu_item {
+  border-bottom: 2px solid #6F6C6B;
+  padding: 1rem 0.7rem;
 }
-.menu_item a{
+
+.menu_item a {
   font-size: 28px !important;
   font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
+  font-style: normal;
+  font-weight: 700;
 }
-.menu li
-{
+
+.menu li {
   list-style: none;
 
 }
-.menu img
-{
+
+.menu img {
   float: right;
 }
-.menu.active
-{
+
+.menu.active {
   left: 0;
 }
+
 .headline {
   background: #1c1a19;
   padding: 2rem;
@@ -136,26 +139,26 @@ font-weight: 700;
     align-items: center;
     list-style: none;
     flex-direction: row;
-    position:relative;
+    position: relative;
     background: #3C3A39;
     height: 10%;
     color: white;
     padding: 0rem;
   }
-  .menu_item 
-{
- border-bottom: 2px solid #6F6C6B;
- padding: 0;
-}
 
-  .menu li
-  {
+  .menu_item {
+    border-bottom: 2px solid #6F6C6B;
+    padding: 0;
+  }
+
+  .menu li {
     border: 0;
   }
-  .menu img
-  {
+
+  .menu img {
     display: none;
   }
+
   .top_header nav ul a {
     font-family: 'Inter', 'cursive', Times, serif;
     font-style: normal;
@@ -270,7 +273,7 @@ font-weight: 700;
   padding: 1.8rem;
 }
 
-.works > h3 {
+.works>h3 {
   font-family: 'Crete Round', 'cursive', Times, serif;
   font-style: normal;
   font-weight: 400;
@@ -281,7 +284,7 @@ font-weight: 700;
   margin: 5rem 0 1rem 0;
 }
 
-.works > hr {
+.works>hr {
   width: 100%;
   margin: 3rem auto;
 }
@@ -432,8 +435,13 @@ line {
   }
 
   @keyframes buttonHover {
-    from { transform: translateY(50%); }
-    to { transform: translateY(-30%); }
+    from {
+      transform: translateY(50%);
+    }
+
+    to {
+      transform: translateY(-30%);
+    }
   }
 
   .project1 ul {
@@ -505,7 +513,7 @@ line {
   background-position: bottom right;
 }
 
-.about > h2 {
+.about>h2 {
   font-family: 'Crete Round', 'cursive', Times, serif;
   font-style: normal;
   font-weight: 400;
@@ -747,6 +755,11 @@ button:active {
 }
 
 @keyframes logoRotate {
-  from { transform: rotate(0deg) scale(1); }
-  to { transform: rotate(360deg) scale(0.8); }
+  from {
+    transform: rotate(0deg) scale(1);
+  }
+
+  to {
+    transform: rotate(360deg) scale(0.8);
+  }
 }
