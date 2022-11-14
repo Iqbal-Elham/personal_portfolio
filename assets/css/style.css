@@ -20,10 +20,11 @@
 }
 
 .menu_item a {
-  font-size: 28px;
+  font-size: 34px !important;
   font-family: 'Inter', 'cursive', 'Times New Roman', Times, serif;
   font-style: normal;
   font-weight: 700;
+  color: #fff5e1 !important;
 }
 
 .top_header nav a {
@@ -41,10 +42,6 @@
   align-items: center;
 }
 
-.toggle {
-  display: block;
-}
-
 .menu {
   display: flex;
   position: fixed;
@@ -56,7 +53,7 @@
   transition: 0.4s;
   color: white;
   top: 0;
-  padding: 3rem 2rem;
+  padding: 3rem 1.5rem;
   gap: 2rem;
 }
 
