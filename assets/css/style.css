@@ -15,6 +15,8 @@
 .top_header {
   background: #3c3a39;
   padding: 1.4rem;
+  position: fixed;
+  width: 100%;
 }
 
 .top_header nav a {
@@ -25,6 +27,7 @@
   font-weight: 700;
   font-size: 18px;
 }
+
 
 .top_header nav {
   display: flex;
