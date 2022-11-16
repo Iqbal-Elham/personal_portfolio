@@ -15,7 +15,7 @@
 .top_header {
   background: #3c3a39;
   padding: 1.4rem;
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
 }
 
@@ -397,6 +397,84 @@
 line {
   display: none;
 }
+
+.pop-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0);
+  backdrop-filter: blur(10px);
+  z-index: -1;
+  transition: background 0.5s;
+}
+
+.pop-wrapper.show
+{
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+.pop-up
+{
+  display: none;
+  justify-content: center;
+  flex-direction: column;
+  margin: 2rem 1rem;
+  padding: 1rem;
+  border: 1px solid gray;
+  gap: 1rem;
+  top: 0;
+  position: fixed;
+  background-color: white;
+  z-index: 3;
+  
+}
+
+.pop-up.show
+{
+  display: flex;
+  transition: display 0.5s;
+}
+.popup-close
+{
+  float: right;
+  width: 10px;
+  height: 10px;
+  
+}
+
+.tools
+{
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+.tools li
+{
+  border: 1px solid gray;
+  padding: 0.2rem 0.6rem;
+}
+
+.pop-buttons
+{
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+}
+.pop-buttons button
+{
+  padding: 0.3rem 0.6rem;
+  font-size: 18px;
+  background-color: #f55800;
+  border: none;
+  color: white;
+}
+
+
+
 
 @media screen and (min-width: 768px) {
   .works {

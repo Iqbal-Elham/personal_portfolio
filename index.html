@@ -1,37 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Crete Round" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Crete Round"
+      rel="stylesheet"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
     <title>Iqbal Elham Portfolio</title>
   </head>
 
   <body>
+    <div class="pop-wrapper"></div>
     <div class="header_app">
       <header class="top_header">
         <nav>
           <div class="logo"><a href="#">Iqbal Elham</a></div>
           <div class="hum_menu">
-          <a class="toggle"><img src="./assets/images/Union.png" alt="Humburger icon" /></a>
-          <ul class="menu">
-            <li><a href=""><img src="./assets/images/desktop_ver/Icon.png" alt="close icon" /></a></li>
-            <li class="menu_item"><a href="#portfolio">Portfolio</a></li>
-            <li class="menu_item"><a href="#works">Works</a></li>
-            
-            <li class="menu_item"><a href="#about">About</a></li>
-            
-            <li class="menu_item"><a href="#contact">Contact</a></li>
-            
-          </ul>
-        </div>
+            <a class="toggle"
+              ><img src="./assets/images/Union.png" alt="Humburger icon"
+            /></a>
+            <ul class="menu">
+              <li>
+                <a href=""
+                  ><img
+                    src="./assets/images/desktop_ver/Icon.png"
+                    alt="close icon"
+                /></a>
+              </li>
+              <li class="menu_item"><a href="#portfolio">Portfolio</a></li>
+              <li class="menu_item"><a href="#works">Works</a></li>
+
+              <li class="menu_item"><a href="#about">About</a></li>
+
+              <li class="menu_item"><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
         </nav>
       </header>
       <section id="portfolio" class="headline">
@@ -39,27 +55,37 @@
           <h1>Hey There.<br />I'm Iqbal</h1>
           <h2>I'm a Software Developer</h2>
           <p>
-            I can help you build a product , feature or website Look through some
-            of my work and experience! If you like what you see and have a project
-            you need coded, don't hesitate to contact me.
+            I can help you build a product , feature or website Look through
+            some of my work and experience! If you like what you see and have a
+            project you need coded, don't hesitate to contact me.
           </p>
         </div>
         <div class="icons">
           <ul>
             <li>
-              <a href=""><img src="./assets/images/github.png" alt="Github icon" /></a>
+              <a href=""
+                ><img src="./assets/images/github.png" alt="Github icon"
+              /></a>
             </li>
             <li>
-              <a href=""><img src="./assets/images/Group.png" alt="Group icon" /></a>
+              <a href=""
+                ><img src="./assets/images/Group.png" alt="Group icon"
+              /></a>
             </li>
             <li>
-              <a href=""><img src="./assets/images/peace.png" alt="Angel list icon" /></a>
+              <a href=""
+                ><img src="./assets/images/peace.png" alt="Angel list icon"
+              /></a>
             </li>
             <li>
-              <a href=""><img src="./assets/images/twitter.png" alt="Twitter icon" /></a>
+              <a href=""
+                ><img src="./assets/images/twitter.png" alt="Twitter icon"
+              /></a>
             </li>
             <li>
-              <a href=""><img src="./assets/images/M.png" alt="Medium icon" /></a>
+              <a href=""
+                ><img src="./assets/images/M.png" alt="Medium icon"
+              /></a>
             </li>
           </ul>
         </div>
@@ -67,17 +93,21 @@
     </div>
     <section id="works" class="works">
       <h2 class="heading"><span>My Recent Works</span></h2>
-      <hr class="hr-line"/>
+      <hr class="hr-line" />
 
       <div class="project_cards">
         <div class="project1">
-          <img src="./assets/images/desktop_ver/Img Placeholder (2).png" alt="Project 1" />
+          <img
+            src="./assets/images/desktop_ver/Img Placeholder (2).png"
+            alt="Project 1"
+          />
           <div class="project1_content">
             <h3>Multi-Post Stories</h3>
             <p>
               A daily selection of privately personalized reads; no accounts or
-              sign-ups required. has been the industry's standard dummy text ever
-              since the 1500s, when an unknown printer took a standard dummy text.
+              sign-ups required. has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a standard
+              dummy text.
             </p>
             <ul>
               <li>css</li>
@@ -85,9 +115,7 @@
               <li>bootstrap</li>
               <li>Ruby</li>
             </ul>
-            <button>
-              See Project
-            </button>
+            <button id="project-1" class="popup-btn">See Project</button>
           </div>
         </div>
         <div class="project">
@@ -103,7 +131,7 @@
               <li>Ruby</li>
             </ul>
           </div>
-          <button>See Project</button>
+          <button id="project-2" class="popup-btn">See Project</button>
         </div>
         <div class="project">
           <div class="head_card">
@@ -118,7 +146,7 @@
               <li>Ruby</li>
             </ul>
           </div>
-          <button>See Project</button>
+          <button class="popup-btn">See Project</button>
         </div>
         <div class="project">
           <div class="head_card">
@@ -133,7 +161,7 @@
               <li>Ruby</li>
             </ul>
           </div>
-          <button>See Project</button>
+          <button class="popup-btn">See Project</button>
         </div>
         <div class="project">
           <div class="head_card">
@@ -148,7 +176,7 @@
               <li>Ruby</li>
             </ul>
           </div>
-          <button>See Project</button>
+          <button class="popup-btn">See Project</button>
         </div>
         <div class="project">
           <div class="head_card">
@@ -163,7 +191,7 @@
               <li>Ruby</li>
             </ul>
           </div>
-          <button>See Project</button>
+          <button class="popup-btn">See Project</button>
         </div>
         <div class="project">
           <div class="head_card">
@@ -178,10 +206,35 @@
               <li>Ruby</li>
             </ul>
           </div>
-          <button>See Project</button>
+          <button class="popup-btn">See Project</button>
         </div>
       </div>
     </section>
+
+
+
+
+    <div class="pop-up">
+      <span> <img class="popup-close" src="./assets/images/Icon.png" alt=""><h1 class="popup-title"></h1></span>
+     
+      
+      <ul class="tools">
+        <li>html</li>
+        <li>bootstrap</li>
+        <li>Ruby and rails</li>
+      </ul>
+      <img class="popup-img" src="" alt="" />
+      <p class="popup-text">
+      </p>
+      <div class="pop-buttons">
+        <a href=""><button type="button">Go live</button></a>
+        <a href=""><button type="button">Source</button></a>
+      </div>
+    </div>
+
+
+
+
     <section id="about" class="about_me">
       <div class="about">
         <h2>About me</h2>
@@ -195,73 +248,77 @@
       </div>
       <hr />
 
-        <ul class="skills">
-          <li class="skill" style="list-style-image: url(./assets/images/diamond.png)">
-          
-            <h3>Languages</h3>
-            <ul class="skill-list">
-              <li>
-                <h4>JavaScript</h4>
-              </li>
-              <li>
-                <h4>Ruby</h4>
-              </li>
-              <li>
-                <h4>Html</h4>
-              </li>
-              <li>
-                <h4>Css</h4>
-              </li>
-              <li>
-                <h4>Python</h4>
-              </li>
-            </ul>
-         
-          </li>
-          <li class="skill" style="list-style-image: url(./assets/images/rect.png)">
-          
-            <h3>Frameworks</h3>
-            <ul class="skill-list">
-              <li>
-                <h4>Bootstrap</h4>
-              </li>
-              <li>
-                <h4>Ruby on Rails</h4>
-              </li>
-              <li>
-                <h4>RSPec</h4>
-              </li>
-              <li>
-                <h4>CapyBara</h4>
-              </li>
-              <li>
-                <h4>Selenium</h4>
-              </li>
-            </ul>
-         
-          </li>
-          <li class="skill" style="list-style-image: url(./assets/images/circld.png)">
-          
-            <h3>Skills</h3>
-            <ul class="skill-list">
-              <li>
-                <h4>Codekit</h4>
-              </li>
-              <li>
-                <h4>Github</h4>
-              </li>
-              <li>
-                <h4>Codepen</h4>
-              </li>
-              <li>
-                <h4>Gitlab</h4>
-              </li>
-              <li>
-                <h4>Terminal</h4>
-              </li>
-            </ul>
-          </li>
-        </ul>
+      <ul class="skills">
+        <li
+          class="skill"
+          style="list-style-image: url(./assets/images/diamond.png)"
+        >
+          <h3>Languages</h3>
+          <ul class="skill-list">
+            <li>
+              <h4>JavaScript</h4>
+            </li>
+            <li>
+              <h4>Ruby</h4>
+            </li>
+            <li>
+              <h4>Html</h4>
+            </li>
+            <li>
+              <h4>Css</h4>
+            </li>
+            <li>
+              <h4>Python</h4>
+            </li>
+          </ul>
+        </li>
+        <li
+          class="skill"
+          style="list-style-image: url(./assets/images/rect.png)"
+        >
+          <h3>Frameworks</h3>
+          <ul class="skill-list">
+            <li>
+              <h4>Bootstrap</h4>
+            </li>
+            <li>
+              <h4>Ruby on Rails</h4>
+            </li>
+            <li>
+              <h4>RSPec</h4>
+            </li>
+            <li>
+              <h4>CapyBara</h4>
+            </li>
+            <li>
+              <h4>Selenium</h4>
+            </li>
+          </ul>
+        </li>
+        <li
+          class="skill"
+          style="list-style-image: url(./assets/images/circld.png)"
+        >
+          <h3>Skills</h3>
+          <ul class="skill-list">
+            <li>
+              <h4>Codekit</h4>
+            </li>
+            <li>
+              <h4>Github</h4>
+            </li>
+            <li>
+              <h4>Codepen</h4>
+            </li>
+            <li>
+              <h4>Gitlab</h4>
+            </li>
+            <li>
+              <h4>Terminal</h4>
+            </li>
+          </ul>
+        </li>
+      </ul>
     </section>
 
     <footer id="contact" class="contact">
@@ -269,35 +326,79 @@
         I'm always interested in hearing about new projects, so if you'd like to
         chat please get in touch.
       </p>
-      <form action="https://formspree.io/f/xlevolbp" method="post" class="contact-form">
-        <input maxlength="30" name="user_name" type="text" placeholder="Full name" class="inputField" required />
-        <input type="email" name="user_email" placeholder="Email address" class="inputField" required />
-        <textarea maxlength="500" name="user_message" id="" cols="30" rows="5" placeholder="Enter text here"
-          class="textareaField" required></textarea>
+      <form
+        action="https://formspree.io/f/xlevolbp"
+        method="post"
+        class="contact-form"
+      >
+        <input
+          maxlength="30"
+          name="user_name"
+          type="text"
+          placeholder="Full name"
+          class="inputField"
+          required
+        />
+        <input
+          type="email"
+          name="user_email"
+          placeholder="Email address"
+          class="inputField"
+          required
+        />
+        <textarea
+          maxlength="500"
+          name="user_message"
+          id=""
+          cols="30"
+          rows="5"
+          placeholder="Enter text here"
+          class="textareaField"
+          required
+        ></textarea>
         <button type="submit" class="contact-button">Get in touch</button>
       </form>
     </footer>
-    <hr>
+    <hr />
     <div class="footer-icons">
       <ul>
         <li>
-          <a href=""><img src="./assets/images/desktop_ver/Icon -GitHub.png" alt="github icon" /></a>
+          <a href=""
+            ><img
+              src="./assets/images/desktop_ver/Icon -GitHub.png"
+              alt="github icon"
+          /></a>
         </li>
         <li>
-          <a href=""><img src="./assets/images/desktop_ver/Icon - Linkedin.png" alt="linkedin icon" /></a>
+          <a href=""
+            ><img
+              src="./assets/images/desktop_ver/Icon - Linkedin.png"
+              alt="linkedin icon"
+          /></a>
         </li>
         <li>
-          <a href=""><img src="./assets/images/desktop_ver/Icon - Angelist.png" alt="anglist icon" /></a>
+          <a href=""
+            ><img
+              src="./assets/images/desktop_ver/Icon - Angelist.png"
+              alt="anglist icon"
+          /></a>
         </li>
         <li>
-          <a href=""><img src="./assets/images/desktop_ver/Icon - Twitter.png" alt="twitter icon" /></a>
+          <a href=""
+            ><img
+              src="./assets/images/desktop_ver/Icon - Twitter.png"
+              alt="twitter icon"
+          /></a>
         </li>
         <li>
-          <a href=""><img src="./assets/images/desktop_ver/Icon - Medium.png" alt="medium icon" /></a>
+          <a href=""
+            ><img
+              src="./assets/images/desktop_ver/Icon - Medium.png"
+              alt="medium icon"
+          /></a>
         </li>
       </ul>
     </div>
     <script src="./assets/js/script.js"></script>
   </body>
-
 </html>
