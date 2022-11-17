@@ -16,48 +16,49 @@ document.querySelectorAll(".menu_item").forEach((n) =>
 const projectDetails = [
   {
     title: "Project Multi post",
-    description: "lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    description:
+      "lorem ipsum dolor sit amet, consectetur adipiscing lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolorlorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor",
     image: "./assets/images/gymfit.png",
   },
   {
     title: "Project second",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing",
-    image: "../images/gymfit.png",
+    description:
+      "lorem ipsum dolor sit amet, consectetur adipiscing lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor",
+    image: "./assets/images/Snapshoot.png",
   },
 ];
 
-var pop = document.querySelector(".pop-up")
-var wrapper = document.querySelector(".pop-wrapper")
-function popup_show()
-{
-    pop.classList.add("show")
-    wrapper.classList.add("show")
+var pop = document.querySelector(".pop-up");
+var wrapper = document.querySelector(".pop-wrapper");
+function popup_show() {
+  pop.classList.add("show");
+  wrapper.classList.add("show");
 }
-
 
 const proj1 = document.querySelector("#project-1");
 proj1.addEventListener("click", () => {
-    popup_show()
-    document.querySelector(".popup-title").innerHTML = projectDetails[0].title
-    document.querySelector(".popup-img").src = projectDetails[0].image
-    document.querySelector(".popup-text").innerHTML = projectDetails[0].description
-});
-const proj2 = document.querySelector("#project-2");
-proj1.addEventListener("click", () => {
-    popup_show()
-    document.querySelector(".popup-title").innerHTML = projectDetails[1].title
-    document.querySelector(".popup-img").src = projectDetails[1].image
-    document.querySelector(".popup-text").innerHTML = projectDetails[1].description
+  popup_show();
+  document.querySelector(".popup-title").innerHTML = projectDetails[0].title;
+  document.querySelector(".popup-img").src = projectDetails[0].image;
+  document.querySelector(".popup-text").innerHTML =
+    projectDetails[0].description;
 });
 
-let closeButton = document.querySelector(".popup-close")
-closeButton.addEventListener('click', () => 
-{
-    pop.classList.remove("show")
-    wrapper.classList.remove("show")
-})
+document.querySelectorAll("#project-2").forEach((p) =>
+  p.addEventListener("click", () => {
+    popup_show();
+    document.querySelector(".popup-title").innerHTML = projectDetails[1].title;
+    document.querySelector(".popup-img").src = projectDetails[1].image;
+    document.querySelector(".popup-text").innerHTML =
+      projectDetails[1].description;
+  })
+);
 
-
+let closeButton = document.querySelector(".popup-close");
+closeButton.addEventListener("click", () => {
+  pop.classList.remove("show");
+  wrapper.classList.remove("show");
+});
 
 // let popBtn = document.querySelector("Button.popup-btn");
 
