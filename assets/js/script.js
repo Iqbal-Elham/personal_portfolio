@@ -26,7 +26,79 @@ const projectDetails = [
       "lorem ipsum dolor sit amet, consectetur adipiscing lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor",
     image: "./assets/images/Snapshoot.png",
   },
+  {
+    title: "Project second",
+    description:
+      "lorem ipsum dolor sit amet, consectetur adipiscing lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor",
+    image: "./assets/images/Snapshoot.png",
+  },
+  {
+    title: "Project second",
+    description:
+      "lorem ipsum dolor sit amet, consectetur adipiscing lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor",
+    image: "./assets/images/Snapshoot.png",
+  },
+  {
+    title: "Project second",
+    description:
+      "lorem ipsum dolor sit amet, consectetur adipiscing lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor",
+    image: "./assets/images/Snapshoot.png",
+  },
+  {
+    title: "Project second",
+    description:
+      "lorem ipsum dolor sit amet, consectetur adipiscing lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor",
+    image: "./assets/images/Snapshoot.png",
+  },
 ];
+
+var project_cards = document.querySelector(".project_cards");
+
+project_cards.innerHTML += `
+
+<div class="project1">
+<img
+  src="./assets/images/desktop_ver/Img Placeholder (2).png"
+  alt="Project 1"
+/>
+<div class="project1_content">
+  <h3>Multi-Post Stories</h3>
+  <p>
+    A daily selection of privately personalized reads; no accounts or
+    sign-ups required. has been the industry's standard dummy text
+    ever since the 1500s, when an unknown printer took a standard
+    dummy text.
+  </p>
+  <ul>
+    <li>css</li>
+    <li>html</li>
+    <li>bootstrap</li>
+    <li>Ruby</li>
+  </ul>
+  <button id="project-1" class="popup-btn">See Project</button>
+</div>
+</div>`;
+
+for (var i = 1; i <= projectDetails.length; i++) {
+  var cards = ` 
+  <div class="project">
+  <div class="head_card">
+    <h3>Professional Art <br />Printing Data</h3>
+    <p>
+      A daily selection of privately personalized reads; no accounts or
+      sign-ups required. has been the industry's standard
+    </p>
+    <ul>
+      <li>html</li>
+      <li>bootstrap</li>
+      <li>Ruby</li>
+    </ul>
+  </div>
+  <button id="project-2" class="popup-btn">See Project</button>
+</div>`;
+
+  project_cards.innerHTML += cards;
+}
 
 var pop = document.querySelector(".pop-up");
 var wrapper = document.querySelector(".pop-wrapper");
@@ -40,8 +112,7 @@ proj1.addEventListener("click", () => {
   popup_show();
   document.querySelector(".popup-title").innerHTML = projectDetails[0].title;
   document.querySelector(".popup-img").src = projectDetails[0].image;
-  document.querySelector(".popup-text").innerHTML =
-    projectDetails[0].description;
+  document.querySelector(".popup-text").innerHTML = projectDetails[0].description;
 });
 
 document.querySelectorAll("#project-2").forEach((p) =>
@@ -60,16 +131,4 @@ closeButton.addEventListener("click", () => {
   wrapper.classList.remove("show");
 });
 
-// let popBtn = document.querySelector("Button.popup-btn");
 
-// if (popBtn) {
-//   var popUpWrapper = document.createElement("div");
-//   popUpWrapper.className = "popup-wrapper";
-//   document.body.prepend(popUpWrapper);
-// }
-
-// popBtn.addEventListener("click", () => {
-//   let pop = document.querySelector("pop-up");
-//   pop.classList.add("show");
-//   popUpWrapper.classList.add("show");
-// });
