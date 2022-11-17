@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap');
+
 *,
 *::before,
 *::after {
@@ -257,7 +259,6 @@
 .project_cards {
   display: grid;
   gap: 2rem;
-  grid-template-columns: repeat(auto-fit, 1fr);
 }
 
 .project_cards ul {
@@ -330,7 +331,7 @@
 .project1 button {
   color: white;
   background: #ff6b00;
-  width: 30%;
+  width: 120px;
   padding: 0.4rem;
   border: #ff6b00;
   font-family: 'Inter', 'cursive', Times, serif;
@@ -398,6 +399,92 @@ line {
   display: none;
 }
 
+.pop-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0);
+  backdrop-filter: blur(10px);
+  z-index: -1;
+  transition: background 0.9s;
+}
+
+.pop-wrapper.show {
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 3;
+}
+
+.pop-up {
+  display: none;
+  justify-content: center;
+  flex-direction: column;
+  margin: 2rem 0.5rem;
+  padding: 1rem;
+  border: 1px solid gray;
+  gap: 1rem;
+  top: 0;
+  position: fixed;
+  background-color: white;
+  z-index: 3;
+}
+
+.pop-up.show {
+  display: flex;
+}
+
+.popup-close {
+  float: right;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+}
+
+.pop-up h1 {
+  font-family: 'Roboto', 'cursive', Times, serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+.pop-up p {
+  font-family: 'Inter', 'cursive', Times, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.tools {
+  list-style: none;
+  display: flex;
+  gap: 0.7rem;
+  margin: 2rem 0 1rem 0;
+}
+
+.tools li {
+  border: 1px solid gray;
+  padding: 0.6rem 0.6rem;
+}
+
+.pop-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pop-buttons button {
+  padding: 0.5rem 1.6rem;
+  align-items: center;
+  font-size: 22px;
+  background-color: #f55800;
+  border: none;
+  color: white;
+}
+
 @media screen and (min-width: 768px) {
   .works {
     padding: 4rem 8rem;
@@ -428,6 +515,39 @@ line {
     z-index: 0;
 
     /* animation-play-state: paused; */
+  }
+
+  .pop-up {
+    left: 50%;
+    transform: translate(-50%, 5%);
+    width: 70%;
+    gap: 0;
+    padding: 1.5rem;
+  }
+
+  .tools {
+    list-style: none;
+    display: flex;
+    gap: 0.7rem;
+    margin: 1rem 0 2rem 0;
+  }
+
+  .popup-content {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1rem;
+  }
+
+  .popup-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .popup-img {
+    width: 100%;
+    height: 100%;
   }
 
   @keyframes buttonHover {
@@ -758,4 +878,9 @@ button:active {
   to {
     transform: rotate(360deg) scale(0.8);
   }
+}
+
+.error {
+  font-size: 16px;
+  color: red;
 }
