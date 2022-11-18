@@ -191,3 +191,19 @@ closeButton.addEventListener('click', () => {
   pop.classList.remove('show');
   wrapper.classList.remove('show');
 });
+
+const email = document.querySelector('#email');
+const form = document.querySelector('.contact-form');
+const error = email.nextElementSibling;
+
+const pattern = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/;
+
+form.addEventListener('submit', (event) => {
+  const isValid = pattern.test(email.value);
+  if (!isValid) {
+    error.textContent = 'Please enter the email in lowercase.';
+    event.preventDefault();
+  } else {
+    error.textContent = '';
+  }
+});
