@@ -1,3 +1,5 @@
+// Toggle menu
+
 const hamburger = document.querySelector('.toggle');
 const navMenu = document.querySelector('.menu');
 
@@ -11,6 +13,7 @@ document.querySelectorAll('.menu_item').forEach((n) => n.addEventListener('click
   navMenu.classList.remove('active');
 }));
 
+// Popup project detail
 const projectDetails = [
   {
     title: 'Project Multi post',
@@ -190,4 +193,21 @@ const closeButton = document.querySelector('.popup-close');
 closeButton.addEventListener('click', () => {
   pop.classList.remove('show');
   wrapper.classList.remove('show');
+});
+
+// Contact validation form
+const email = document.querySelector('#email');
+const form = document.querySelector('.contact-form');
+const error = email.nextElementSibling;
+
+const pattern = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/;
+
+form.addEventListener('submit', (event) => {
+  const isValid = pattern.test(email.value);
+  if (!isValid) {
+    error.textContent = 'Please enter the email in lowercase.';
+    event.preventDefault();
+  } else {
+    error.textContent = '';
+  }
 });
