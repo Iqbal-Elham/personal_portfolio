@@ -1,6 +1,7 @@
 const hamburger = document.querySelector('.toggle');
 const navMenu = document.querySelector('.menu');
 
+// Toggle menu 
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');
   navMenu.classList.toggle('active');
@@ -11,6 +12,7 @@ document.querySelectorAll('.menu_item').forEach((n) => n.addEventListener('click
   navMenu.classList.remove('active');
 }));
 
+// Popup project detail
 const projectDetails = [
   {
     title: 'Project Multi post',
@@ -192,6 +194,7 @@ closeButton.addEventListener('click', () => {
   wrapper.classList.remove('show');
 });
 
+// Contact validation form
 const email = document.querySelector('#email');
 const form = document.querySelector('.contact-form');
 const error = email.nextElementSibling;
