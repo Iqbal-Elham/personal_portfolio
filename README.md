@@ -47,7 +47,7 @@ Test for Linters For tracking linter errors locally you need to follow these ste
 3. For tracking linter errors in javascript files run:
 ```bash npx eslint . ``` 
 
-## Authors
+## Author
 
 👤 **Maher Ramadan**
 
