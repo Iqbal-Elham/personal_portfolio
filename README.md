@@ -13,7 +13,7 @@
 
 ## Live Demo 
 
-[iqba-elham](https://iqbal-elham.github.io/personal_portfolio/)
+[Maher Ramadan]
 
 ## Get Started
 
@@ -27,7 +27,7 @@
 ### Setup 
 
 1. Download the **Zip** file or clone the repo with:
-```bash git clone https://github.com/Iqbal-Elham/personal_portfolio.git ``` 
+```bash git clone  ``` 
 2. To access cloned directory run: 
 ```bash cd Hello_micorverse ``` 
 3. Open it with the live server 
@@ -51,7 +51,7 @@ Test for Linters For tracking linter errors locally you need to follow these ste
 
 👤 **Iqbal Elham**
 
-- GitHub: [@iqbal-elham](https://github.com/Iqbal-Elham)
+- GitHub: [@maherramadan78](https://github.com/maherramadan78)
 
 
 
