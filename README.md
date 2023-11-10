@@ -49,7 +49,7 @@ Test for Linters For tracking linter errors locally you need to follow these ste
 
 ## Authors
 
-👤 **Iqbal Elham**
+👤 **Maher Ramadan**
 
 - GitHub: [@maherramadan78](https://github.com/maherramadan78)
 
